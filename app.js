@@ -2,6 +2,7 @@ const express   = require('express');
 const app       = express();
 const mongoose  = require('mongoose');
 
+app.use(express.static(__dirname+"/public"));
 
 app.get("/",function (req,res) {
   res.render("index.ejs");
