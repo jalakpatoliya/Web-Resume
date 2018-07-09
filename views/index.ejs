@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js">
-    </script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
-    <style media="screen">
-    div.relative {
-        position: relative;
-        left: 250px;
-    }
-
-    </style>
-  </head>
-  <body>
-    <br>
+<% include ./partials/header %>
+    <br><br>
       <div class="ui container">
         <div class="ui raised segment">
           <div class="ui stackable grid">
@@ -47,23 +27,27 @@
             <div class="row">
               <div class="two wide column"></div>
               <div class="three wide column">
-                <a href="#">
-                  <img id="a"class="ui  medium circular image" src="/images/about.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                <a href="/about_me">
+                    <img id="a"class="ui  medium circular image" src="/images/about.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <br> <span style="color:black;font-style: normal;font-size:20px">&nbsp; &ensp; &emsp;About Me</span>
                 </a>
               </div>
               <div class="three wide column">
-                <a href="#">
+                <a href="/resume">
                   <img id="b" class="ui  medium circular image" src="/images/resume.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                  <br> <span style="color:black;font-style: normal;font-size:20px">&nbsp;&nbsp; &ensp; &emsp;Resume</span>
                 </a>
               </div>
               <div class="three wide column">
-                <a href="#">
+                <a href="https://github.com/jalakpatoliya">
                   <img id="c" class="ui  medium circular image" src="/images/github.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                  <br> <span style="color:black;font-style: normal;font-size:20px">&nbsp;&nbsp;&nbsp; &ensp; &emsp;GitHub</span>
                 </a>
               </div>
               <div class="three wide column">
-                <a href="#">
-                  <img id="d" class="ui  medium circular image" src="/images/contact.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                <a href="mailto:jalakpatoliya777@gmail.com">
+                    <img id="d" class="ui  medium circular image" src="/images/contact.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <br> <span style="color:black;font-style: normal;font-size:20px">&emsp; &ensp; &emsp;Contact</span>
                 </a>
               </div>
               <div class="one wide column"></div>
@@ -101,5 +85,5 @@
             }
           }
       </script>
-  </body>
-</html>
+
+<% include ./partials/footer %>
