@@ -1,6 +1,5 @@
 const express   = require('express');
 const app       = express();
-const mongoose  = require('mongoose');
 const all_routes = require('./routes/all_routes');
 
 app.use(express.static(__dirname+"/public"));
