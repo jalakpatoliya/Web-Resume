@@ -3,6 +3,7 @@ const app       = express();
 const all_routes = require('./routes/all_routes');
 var   port       = process.env.PORT || 8080;
 
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname+"/public"));
 app.use(all_routes);
 
