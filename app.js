@@ -1,15 +1,26 @@
 const express   = require('express');
 const app       = express();
-const all_routes = require('./routes/all_routes');
 var   port       = process.env.PORT || 8080;
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname+"/public"));
-app.use(all_routes);
 
 app.get("/",function (req,res) {
   res.render("index");
 })
+
+app.get('/about_me', function (req, res) {
+  res.render('about_me');
+})
+
+app.get('/contact', function (req, res) {
+  res.render('contact');
+})
+
+app.get('/resume', function (req, res) {
+  res.render('resume');
+})
+
 
 app.listen(port,function(){
   console.log('Our app is running on http://localhost:' + port);

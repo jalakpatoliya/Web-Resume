@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node app.js"
   },
-"dependencies": {
+  "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "supervisor": "^0.12.0"
   }
 }
