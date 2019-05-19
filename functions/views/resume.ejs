@@ -1,6 +1,8 @@
 <% include ./partials/header %>
 
 <div class="ui container"><br>
+   
+
     <div class="ui yellow raised segment">
         <div class="ui stackable grid">
             <div class="row">
@@ -17,8 +19,97 @@
                 </div>
             </div>
 
+            
             <div class="ui section divider"></div>
+            <!-- Section for Work Experience -->
+            <div class="row">
+                <div class="eight wide column mobile-center">
+                    <h1> <i class="briefcase icon"></i> Work Experience</h1>
+                </div>
+            </div>
 
+<!-- --------------------      Dobby Internship ----------------------------------- -->
+            <div class="sixteen wide column project-padding">
+                <div class="ui raised yellow padded segment">
+                    <div class="project-head">
+                        <img class="ui right floated medium image" src="images/DOBBY6.png" alt="">
+                        <div>
+                            <h2 class="project-title">DOBBY ADS - Internship</h2>
+                            <p class="meta"><a href="https://dobbyads.com/">Dobby </a></p>
+                            <p class="meta">Feb 2018 - April 2019 ( 3 months)</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>About</h3>
+                        <p>Dobby is an advertising startup. It installs LCDs in supermarkets and display
+                            adverisements of adveritsers based on their purchased subscriptions. Dobby also
+                            displays it's own ads and that of shop owners.
+                        </p>
+                        <h3>Role</h3>
+                        <div class="ui bulleted list">
+                            <!-- <div class="item">
+                                It contains two user interface, one for faculty and other for students.
+                            </div> -->
+                            <div class="item">
+                                Worked in backend and DevOps.
+                            </div>
+                            <div class="item">
+                                Restructured the whole backend code in MVC structure.
+                            </div>
+                            <div class="item">
+                                Implemented end to end backend flow of offerImage creation in which backend generates offerImages based on selected
+                                products and offervalues provided. Added cron job for it's everyday creation.
+                            </div>
+                            <div class="item">
+                                Did all DB architectural changes and optimization.
+                            </div>
+                            <div class="item">
+                                Created Test cases for testing all the modules.
+                            </div>
+                            <div class="item">
+                                Introduced ModSecurity with OWASP rules in Nginx to provide a decent security to server.
+                            </div>
+                            <div class="item">
+                            Introduced visual web log analyzer to monitor site hits, anamoly activities and blacklisting potentially harmful IPs.
+                            </div>
+                            <div class="item">
+                            Neutralized random crawlers and bots hits on portal.
+                            </div>
+                            <div class="item">
+                            Made multiple frontend projects and a base server live on same aws instance.
+                            </div>
+                            <div class="item">
+                            Maintainer of dev, test and prod branches of Frontend and backend projects.
+                            </div>
+                            <div class="item">
+                            Implemented continuous integration and continuous deployment of all frontend and backend projects.
+                            </div>
+                            
+                        </div>
+                        <h4>Techs</h4>
+                        <p>NodeJS, PostgreSQL, ExpressJS, SequelizeJS, Nginx.</p>
+                        <h4>Libraries and api</h4>
+                        <div class="ui bulleted list">
+                            <div class="item">node-schedule : For cron jobs.</div>
+                            <div class="item">passport : For user authentication and authorization.</div>
+                            <div class="item">jsonwebtoken : For token creation of user details.</div>
+                            <div class="item">bcrypt : For encrypting user password.</div>
+                            <div class="item">cors : To allow cross-origin resource sharing.</div>
+                            <div class="item">dotenv : To use env variables in code.</div>
+                            <div class="item">jimp : For image generation. </div>
+                            <div class="item">uuid : For creating unique userid for products of Dobby. </div>
+                            <div class="item">multer-gridfs-storage : For uploading and storing files.</div>
+                            <div class="item">body-parser : For parsing request bodies.</div>
+                            <div class="item">nodemon : Runs program and reloads if encounters changes in code.</div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+<!-- ------------------------------------------------------------------------------- -->
+            <div class="ui section divider"></div>
+            <!-- Section for Projects -->
             <div class="row">
                 <div class="eight wide column mobile-center">
                     <h1> <i class="laptop icon"></i> Projects</h1>
@@ -88,8 +179,8 @@
                             <p>NodeJS, MongoDB, EJS, ExpressJS, MongooseJS and Semantic UI.</p>
                             <h4>Libraries and api</h4>
                             <div class="ui bulleted list">
-                                <div class="item">node-schedule   : For sending sending emails and notifications on scheduled time</div>
-                                <div class="item">nodemailer      : For sending mails</div>
+                                <div class="item">node-schedule   : For sending sending emails and notifications on scheduled time.</div>
+                                <div class="item">nodemailer      : For sending mails.</div>
                                 <div class="item">all-object-keys : For making specific data available to all web-pages.</div>
                                 <div class="item">mongo-xlsx      : For converting excel file to mongo data.</div>
                                 <div class="item">passport        : For user authentication and authorization.</div>
@@ -471,12 +562,32 @@
                 </div>
                 <div class="four wide column align-center logo-margin">
                     <div class="logo">
-                        <img class="ui small image" src="/images/express-js.png">
+                        <img class="ui small image" src="/images/mongodb1.png">
+                    </div>
+                </div>
+                <div class="four wide column align-center logo-margin">
+                    <div class="logo">
+                        <img class="ui small image" src="/images/postgres4.png">
+                    </div>
+                </div>
+                <div class="four wide column align-center logo-margin">
+                    <div class="logo">
+                        <img class="ui large image" src="/images/NGINX2.png">
                     </div>
                 </div>
                 <div class="four wide column align-center logo-margin">
                     <div class="logo">
                         <img class="ui small image" src="/images/mongoose-js.png">
+                    </div>
+                </div>
+                <div class="four wide column align-center logo-margin">
+                    <div class="logo">
+                        <img class="ui small image" src="/images/sequelize2.png">
+                    </div>
+                </div>
+                <div class="four wide column align-center logo-margin">
+                    <div class="logo">
+                        <img class="ui small image" src="/images/express-js.png">
                     </div>
                 </div>
                 <div class="four wide column align-center logo-margin">
@@ -501,10 +612,9 @@
                 </div>
                 <div class="four wide column align-center logo-margin">
                     <div class="logo">
-                        <img class="ui small image" src="/images/semantic-ui.png">
+                        <img class="ui small image" src="/images/semanticUI2.png">
                     </div>
                 </div>
-
             </div>
         </div>
     </div><br>
